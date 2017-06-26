@@ -1,12 +1,12 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Why use OpenMEEG?</title>
+    <title>Why use OpenMEEG? &#8212; OpenMEEG 2.4 documentation</title>
     
     <link rel="stylesheet" href="_static/navy.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '0.2',
+        VERSION:     '2.4',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -29,7 +29,7 @@
     <link rel="next" title="Publications on OpenMEEG" href="publications.html" />
     <link rel="prev" title="Contact us" href="contact.html" /> 
   </head>
-  <body role="document">
+  <body>
 <div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px; min-height:150px">
     <div style='float:left; display:inline-block'>
         <a href="index.html"><img src="_static/logo.png" border="0" alt="openmeeg"/></a>
@@ -60,7 +60,7 @@
         <li><a href="index.html">Home</a>&nbsp;|&nbsp;</li>
         <li><a href="#">Why OpenMEEG?</a>&nbsp;|&nbsp;</li>
         <li><a href="https://github.com/openmeeg/openmeeg/blob/master/README.rst#install-precompiled-binaries">Download</a>&nbsp;|&nbsp;</li>
-        <li><a href="http://openmeeg.gforge.inria.fr/download/tutorial-3.0.pdf">Tutorial (pdf)</a>&nbsp;|&nbsp;</li>
+        <li><a href="tutorial.html">Tutorial</a>&nbsp;|&nbsp;</li>
         <li><a href="https://github.com/openmeeg/openmeeg/">Source code</a>&nbsp;|&nbsp;</li>
         <li><a href="license.html">License</a>&nbsp;|&nbsp;</li>
         <li><a href="publications.html">Publications</a>&nbsp;|&nbsp;</li>
@@ -111,9 +111,50 @@
 <div class="section" id="how-do-you-measure-precision">
 <h2>How do you measure precision?<a class="headerlink" href="#how-do-you-measure-precision" title="Permalink to this headline">¶</a></h2>
 <p>Relative difference measure (RDM) <em>(should be close to 0)</em> and Magnitude error (MAG) <em>(should be close to 1)</em>:</p>
-<div class="math">
-<p><img src="_images/math/bb5405096192b6b2d1fd854151a05b639e7f5b9f.png" alt="\mathbf{MAG} = \left\| \frac{V_{bem}}{\|V_{bem}\|_2} - \frac{V_{exact}}{\|V_{exact}\|_2} \right\| \,,\, \mathbf{RDM} = \frac{\|V_{bem}\|_2}{\|V_{exact}\|_2}"/></p>
-</div><p>A sample sphere model with 5 dipoles:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">\mathbf{MAG} = \left\| \frac{V_{bem}}{\|V_{bem}\|_2} - \frac{V_{exact}}{\|V_{exact}\|_2} \right\| \,,\, \mathbf{RDM} = \frac{\|V_{bem}\|_2}{\|V_{exact}\|_2}
+
+</tt>)</p>
+latex exited with error
+[stdout]
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=latex)
+ restricted \write18 enabled.
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2016/03/31&gt;
+Babel &lt;3.9r&gt; and hyphenation patterns for 3 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/utf8x.def))
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/ucs.sty
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-global.def))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+
+! LaTeX Error: File `anyfontsize.sty' not found.
+
+Type X to quit or &lt;RETURN&gt; to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: 
+! Emergency stop.
+&lt;read *&gt; 
+         
+l.9 \usepackage
+               {bm}^^M
+No pages of output.
+Transcript written on math.log.
+</div>
+<p>A sample sphere model with 5 dipoles:</p>
 <p><div style="text-align: center; margin: -7px 0 -10px 0;">   <a class="reference internal" href="_images/sphere_dipoles_3D.png"><img alt="Sphere model with 5 dipoles" src="_images/sphere_dipoles_3D.png" style="width: 250px;" /></a>   <a class="reference internal" href="_images/sphere_dipoles_3D_zoom.png"><img alt="Sphere model with 5 dipoles (zoom)" src="_images/sphere_dipoles_3D_zoom.png" style="width: 200px;" /></a>   </div></p>
 </div>
 <div class="section" id="benchmark-openmeeg-outperforms-other-implementations">
@@ -136,8 +177,8 @@
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2009-2017, OpenMEEG Developers..
-      Last updated on Jun 09, 2017.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.5.2.
+      Last updated on Jun 23, 2017.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.2.
     </div>
   </body>
 </html>
